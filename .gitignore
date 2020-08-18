@@ -1,5 +1,3 @@
 node_modules/
 
-output
-
-views/
+output\.txt
