@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using plain html in Pug</title> -->
+    <title>#{title}</title>
+
+    style *{ font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+</head>
+
+<body body::before style="opacity: 0.8;   content: '';    width: 100%;   height: 450px;  z-index: -1;   top: 0px;  position:static; background: url('/static/big.jpeg') no-repeat center center;   ">
+    <nav style="background-color:#b45252; padding: 12px">
+        <ul style=" display: flex;flex-direction: row;">
+            <li style=" list-style: none; padding: 3px 12px;"><a style="text-decoration: none; color: white; font-weight: bold;" href="/">Home</a></li>
+            <li style=" list-style: none; padding: 3px 12px;"><a style="text-decoration: none; color: white; font-weight: bold;" href="/">About</a></li>
+            <li style=" list-style: none; padding: 3px 12px;"><a style="text-decoration: none; color: white; font-weight: bold;" href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container" style="  margin: 35px 0px; ">
+
+        <h2 style="text-align: center; color: black;">Book your home today at $0 down payment - To know more fill this form now!</h2>
+        //-  <p> 
+        //-     | #{content} 
+        //-     | This is a plain html using pug 
+        //- </p>
+
+        <form action="/" method="post" id="contact">
+            <input style=" display: block;padding: 3px; margin: 15px auto;  width: 60%; margin-top: 155px; outline: none; border: 1px solid black; border-radius: 5px;" type="text" name="name" id="name" placeholder="Enter your name">
+            <input style=" display: block;padding: 3px; margin: 15px auto;  width: 60%; outline: none; border: 1px solid black; border-radius: 5px;" type="text" name="age" id="age" placeholder="Enter your age">
+            <input style=" display: block;padding: 3px; margin: 15px auto;  width: 60%; outline: none; border: 1px solid black; border-radius: 5px;" type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input style=" display: block;padding: 3px; margin: 15px auto;  width: 60%; outline: none; border: 1px solid black; border-radius: 5px;" type="text" name="address" id="address" placeholder="Enter your address"></textarea>
+            <textarea style=" display: block;padding: 3px; margin: 15px auto;  width: 60%; outline: none; border: 1px solid black; border-radius: 5px;" name="more" id="more" cols="20" rows="5" placeholder="More about you.."></textarea>
+            <button style=" opacity: 3;  margin: 4px auto;display: block;padding: 5px 12px;background: black;color: white;font-weight: bold;font-size: 15px;border: 2px solid gray;border-radius: 9px;cursor: pointer;outline: none;" class="btn">Submit</button>
+        </form>
+    </div>
+    </body>
+    </html>
